@@ -44,16 +44,16 @@
       <artifactId>jdbc-driver</artifactId>
       <version>1.7</version>
     </dependency>-->
-    <dependency>
+    <!--<dependency>
       <groupId>commons-dbcp</groupId>
       <artifactId>commons-dbcp</artifactId>
       <version>1.2.2</version>
-    </dependency>
+    </dependency>-->
     <dependency>
-      <groupId>org.zeromq</groupId>
-      <artifactId>jeromq</artifactId>
-      <version>0.5.1</version>
-    </dependency>
+      <groupId>org.zeromq</groupId>
+      <artifactId>jeromq</artifactId>
+      <version>0.5.1</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
