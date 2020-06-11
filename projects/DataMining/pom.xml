@@ -14,12 +14,6 @@
       <artifactId>commons-dbutils</artifactId>
       <version>1.6</version>
     </dependency>
-    <!--<dependency>
-      <groupId>com.oracle</groupId>
-      <artifactId>jdbc-driver</artifactId>
-      <version>1.8</version>
-      <scope>runtime</scope>
-    </dependency>-->
     <dependency>
       <groupId>commons-dbcp</groupId>
       <artifactId>commons-dbcp</artifactId>
@@ -65,11 +59,12 @@
       <artifactId>jfxutils</artifactId>
       <version>1.0</version>
     </dependency>
-    <!--<dependency>
-      <groupId>com.hpe.fortify</groupId>
-      <artifactId>fortify-annotations</artifactId>
-      <version>18.20</version>
-    </dependency>-->
+    <!-- [ADDED 6/11/2020] https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>42.2.13</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
