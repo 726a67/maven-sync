@@ -59,7 +59,6 @@
       <artifactId>jfxutils</artifactId>
       <version>1.0</version>
     </dependency>
-    <!-- [ADDED 6/11/2020] https://mvnrepository.com/artifact/org.postgresql/postgresql -->
     <dependency>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
@@ -68,6 +67,17 @@
   </dependencies>
   <build>
     <plugins>
+      <!-- Offline caching plugin; do not remove -->
+      <plugin>
+        <groupId>de.qaware.maven</groupId>
+        <artifactId>go-offline-maven-plugin</artifactId>
+        <version>1.2.5</version>
+        <configuration>
+          <dynamicDependencies>
+        </dynamicDependencies>
+        </configuration>
+      </plugin>
+      <!-- Project plugins -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>

@@ -14,11 +14,6 @@
       <artifactId>commons-dbutils</artifactId>
       <version>1.6</version>
     </dependency>
-    <!--<dependency>
-      <groupId>com.oracle</groupId>
-      <artifactId>jdbc-driver</artifactId>
-      <version>1.8</version>            
-    </dependency>-->
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-math3</artifactId>
@@ -32,6 +27,17 @@
   </dependencies>
   <build>
     <plugins>
+      <!-- Offline caching plugin; do not remove -->
+      <plugin>
+        <groupId>de.qaware.maven</groupId>
+        <artifactId>go-offline-maven-plugin</artifactId>
+        <version>1.2.5</version>
+        <configuration>
+          <dynamicDependencies>
+        </dynamicDependencies>
+        </configuration>
+      </plugin>
+      <!-- Project plugins -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
