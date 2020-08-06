@@ -59,11 +59,13 @@
       <artifactId>jfxutils</artifactId>
       <version>1.0</version>
     </dependency>
+    <!--
     <dependency>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
       <version>42.2.13</version>
     </dependency>
+    -->
   </dependencies>
   <build>
     <plugins>
@@ -74,7 +76,13 @@
         <version>1.2.5</version>
         <configuration>
           <dynamicDependencies>
-        </dynamicDependencies>
+            <DynamicDependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>42.2.13</version>
+                <repositoryType>MAIN</repositoryType>
+            </DynamicDependency>
+          </dynamicDependencies>
         </configuration>
       </plugin>
       <!-- Project plugins -->
