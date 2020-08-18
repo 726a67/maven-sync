@@ -9,10 +9,17 @@
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
   <dependencies>
+    <!-- removed due to CVE-2020-10683, CVE-2018-1000632; replaced with org.dom4j:dom4j
     <dependency>
       <groupId>dom4j</groupId>
       <artifactId>dom4j</artifactId>
       <version>1.6.1</version>
+    </dependency>
+    -->
+    <dependency>
+      <groupId>org.dom4j</groupId>
+      <artifactId>dom4j</artifactId>
+      <version>2.1.3</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
