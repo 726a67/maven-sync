@@ -19,7 +19,8 @@ CONFIGURE_REPOS()
 
 	subscription-manager repos --proxy=${PROXY} \
 	--disable='*' \
-	--enable=rhel-7-server-rpms
+	--enable=rhel-7-server-rpms \
+	--enable=rhel-server-rhscl-7-rpms
 
 	echo -e
 }
